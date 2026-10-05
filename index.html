@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+        }
+
+        /* Border pembungkus paling luar */
+        .form-container {
+            border: 1px solid #7f7f7f;
+            padding: 15px;
+            width: 480px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        fieldset {
+            border: 1px solid #a6a6a6;
+            margin-bottom: 15px;
+            padding: 12px 15px;
+        }
+
+        legend {
+            padding: 0 4px;
+        }
+
+        .input-group {
+            margin-bottom: 8px;
+        }
+
+        .input-group label {
+            display: inline-block;
+            width: 50px;
+        }
+
+        .input-group input[type="text"],
+        .input-group input[type="email"] {
+            width: 200px;
+            padding: 2px 4px;
+            border: 1px solid #7f7f7f;
+        }
+
+        form p {
+            margin: 10px 0 5px 0;
+        }
+
+        textarea {
+            display: block;
+            margin-top: 5px;
+            margin-bottom: 12px;
+            border: 1px solid #7f7f7f;
+        }
+
+        .checkbox-group {
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            padding: 2px 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <form>
+            <fieldset>
+                <legend>Your Details:</legend>
+                <div class="input-group">
+                    <label>Name:</label>
+                    <input type="text">
+                </div>
+                <div class="input-group">
+                    <label>Email:</label>
+                    <input type="email">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Review:</legend>
+
+                <p>
+                    How did you hear about us?
+                    <select>
+                        <option>Google</option>
+                        <option>Instagram</option>
+                        <option>Facebook</option>
+                    </select>
+                </p>
+
+                <p>Would you visit again?</p>
+                <label><input type="radio" name="visit"> Yes</label>
+                <label><input type="radio" name="visit"> No</label>
+                <label><input type="radio" name="visit"> Maybe</label>
+
+                <p>Comments:</p>
+                <textarea rows="4" cols="38"></textarea>
+
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" checked> Sign me up for email updates
+                    </label>
+                </div>
+
+                <input type="submit" value="Submit review">
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
